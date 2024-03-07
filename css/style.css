@@ -1,4 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
 /****** General ***********/
+
 * {
     font-family: 'Raleway', sans-serif;
 }
@@ -142,6 +144,254 @@ header ul {
 header a {
     padding: 20px 0 20px;
 }
+ul :hover{
+    color:#0065fc;
+    
+
+}
+/* 
+^----------------------
+*      SEARCH BAR     
+^----------------------
+*/
+form {
+    display: inline-block;
+    width: 100%;
+}
+
+form i {
+    background-color: var(--light-grey);
+    padding: 10px 13px;
+    border-radius: 15px 0 0 15px;
+}
+
+form input {
+    border: 1px solid var(--light-grey);
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 0 7px 10px;
+    margin-left: -5px;
+}
+
+form input::placeholder {
+    color: black;
+}
+
+form h1 {
+    font-size: 20px;
+}
+
+form button {
+    border-radius: 0 14px 14px 0;
+    background-color: var(--blue);
+    border: none;
+    color: var(--white);
+    font-weight: bold;
+    font-size: 16px;
+    padding: 9px 17px 8px 17px;
+    cursor: pointer;
+    margin-left: -5px;
+}
+
+form button:hover {
+    box-shadow: 1px 1px 10px var(--dark-grey);
+}
+
+/* 
+*       make the magnifying glass disappear 
+*/
+.fa-solid.fa-magnifying-glass {
+    display: none;  
+}
+
+
+
+
+
+/* 
+^----------------------
+*       FILTERS     
+^----------------------
+*/
+.filters {
+    display: inline-flex;
+    padding-top: 18px;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 20px;
+ }
+
+ .filters h3 {
+    margin-right: 20px;
+}
+
+.btn-filter p {
+    margin: 0;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.btn-filter {
+    font-weight: bold;
+    border: 1px solid var(--light-grey);
+    border-radius: 30px;
+    border-left: none;
+}
+
+.btn-filter:hover{
+    background-color: var(--light-grey);
+    box-shadow: 0 0 8px var(--blue);
+}
+  
+.btn-filter .fa-solid {
+    background-color: var(--light-blue);
+    border-radius: 30px;
+}
+
+.btn-filter .fa-child-reaching {
+    padding: 14px 17px 14px 17px;
+    margin-right: 10px;
+    color: var(--blue);
+}
+
+.btn-filter .fa-heart, .fa-fire, .fa-money-bill-wave {
+    padding: 14px 14px 14px 14px;
+    margin-right: 10px;
+    color: var(--blue);
+}
+
+
+/*
+*        barre d'information
+*/
+#icon-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}  
+
+.fa-solid.fa-info {
+    border: 1px solid var(--light-grey);
+    border-radius: 50%;
+    color: var(--blue);
+    height: 25px;   
+    width: 25px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+}
+  
+
+
+
+/* 
+*       ARTICLES     
+*/
+.all-articles {                                   
+    display: flex;                                  
+    gap: 20px;
+} 
+.all-articles > div {
+    border-radius: 16px;
+    background-color: var(--light-grey);
+}
+.all-articles h3 {
+    padding-left: 20px;
+}
+.all-articles .hebergements {
+    flex-basis: 66%;
+}
+.all-articles .populaires {
+    flex-basis: 33%;
+}
+
+
+
+/* 
+*    ARTICLES --> HEBERGMENTS     
+*/
+.hebergements {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 0;
+    padding: 0 10px 0 10px;
+}
+.hebergements h3 {
+    width: 100%;
+}
+.hebergements a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.card-hebergement {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-around;
+ } 
+.card-hebergement div {
+    flex-basis: calc(33% - 40px);
+    min-width: 220px;
+}
+
+.card {
+    background-color: var(--white);
+    border-radius: 16px;
+    padding: 5px;
+    box-shadow: 0 0 8px var(--dark-grey);
+    flex-grow: 1;
+    margin: 0 10px 10px 10px;
+    transition: all 0.2s;
+}
+
+.card img {
+    border-radius: 16px 16px 0 0;
+    height: 120px;
+    width: 100%;
+    object-fit: cover;
+}
+.card p, .card h4 {
+    margin: 5px
+}
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 8px var(--blue);
+    cursor: pointer;
+}
+.card .stars {
+    margin-top: auto;
+}
+/*-- activités--*/
+
+
+.photo {
+    width: Fill (297.5px)
+    height: Fixed (439px)
+    border-radius: 20px
+    
+}
+
+  /* 
+    *       footer 
+    */
+    footer {
+        display: block;
+        padding-left: 30px;
+    }
+    .footer-left, .footer-middle {
+        margin-bottom: 25px;
+    }
+
+
+
+
+
+
 
 
 
