@@ -73,12 +73,13 @@ a {
 header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    
 }
 
 .header-logo-site {
     width: 62px;
     object-fit: contain;
+    margin-right: auto;
 }
 
 header ul {
@@ -89,12 +90,20 @@ header ul {
     justify-content: space-between;
 }
 
-header a {
-    padding: 0px 0;
-}
 
 header ul li:hover a {
     color: var(--main-color);
+}
+
+
+.heb:hover{
+    border-top: 2px solid var(--main-color);
+    color: var(--main-color);
+    padding: 20px;
+   
+    text-decoration: none;
+
+
 }
 
 /*-------------------
@@ -247,7 +256,11 @@ form button:hover {
     flex-wrap: wrap;
     align-items: flex-start;
     gap: 0;
-    padding:0 10px
+    padding:0 10px;
+}
+h2{ padding-top: -5px;
+    padding-bottom: 20px;
+    padding-left: 10px;
 }
 .hebergements h3{
     width: 100%;
