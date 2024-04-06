@@ -17,7 +17,7 @@
     --white: white;
     
     --dark-grey: #d9d9d9;
-    
+    --
 }
 
 
@@ -78,6 +78,7 @@ header {
 
 .header-logo-site {
     width: 62px;
+     height: 62px;
     object-fit: contain;
     margin-right: auto;
 }
@@ -156,7 +157,9 @@ form button:hover {
 }
 
 
-
+.fa-solid.fa-magnifying-glass {
+    display: none;
+}
 /* 
 ^----------------------
 *       FILTERS     
@@ -164,19 +167,20 @@ form button:hover {
 */
 .filters {
     display: inline-flex;
-    padding-top: 18px;
-    flex-flow: row wrap;
+    padding: 30px;
+    flex-wrap:  wrap;
     align-items: center;
     gap: 20px;
  }
 
- .filters h3 {
-    margin-right: 20px;
+ .filters h3  {margin: 0;
+    margin-right: auto;
+
 }
 
 .btn-filter p {
     margin: 0;
-    padding-right: 20px;
+    padding-right: 15px;
     cursor: pointer;
 }
 
@@ -184,7 +188,7 @@ form button:hover {
     font-weight: bold;
     border: 1px solid var(--dark-grey);
     border-radius: 30px;
-    border-left: none;
+    
 }
 
 .btn-filter:hover{
@@ -207,6 +211,19 @@ form button:hover {
     padding: 14px 14px 14px 14px;
     margin-right: 10px;
     color: var(--main-color);
+}
+.filtres{
+    display: flex;
+    align-items: center;
+}
+@media only screen and (max-width: 1024px) {
+    .filters {
+    
+        align-items: stretch;
+        margin-bottom: 20px;
+        align-items: flex-start;
+    }
+    
 }
 
 
@@ -277,20 +294,20 @@ h2{ padding-top: -5px;
     
 }
 .hebergements-cards div {
-    flex-basis: calc(33% - 40px);
-    min-height: 220px;
+    flex-basis: calc(25% - 2rem);
+    min-height: 120px;
 }
 .cont{
     background-color: var(--white);
     border-radius: 16px;
-    padding: 5px;
+
     box-shadow: 0 0 8px var(--dark-grey);
     display: inline-block;
     
-    margin: 10px 10px 10px 10px;
+    margin: 20px;
 
 }
-img { height: 120px;
+.img { height: 10rem;
     
 
 }
@@ -304,7 +321,7 @@ img { height: 120px;
 
 .hebergement-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    grid-template-columns: repeat(auto-fit); 
     gap: 2px; 
 }
 
@@ -312,7 +329,7 @@ img { height: 120px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border: 1px solid #ccc; 
+    border: 1px solid var(--main-bg-color); 
     padding: 2px;
 }
 
@@ -320,9 +337,7 @@ img { height: 120px;
     max-width: 100%; 
 }
 
-.box {
-    margin: top 33px; 
-}
+
 /***/
 .hebergements-and-populaires .hebergement-cards {
     display: grid;
@@ -422,35 +437,32 @@ img { height: 120px;
     margin-bottom: 20px; 
 
   }
-  .image-container1{
-    background-image: url('/bouki Rekia/images/activites/paul-hermann.jpg');
-    
-  }
+  
   
   .cards img {
     width: 100%;
-    height: auto; 
+    height: calc(445px - 56px); 
     display: flex;
-    margin-bottom: 10px; 
-  object-fit: contain;
+  object-fit: cover;
   
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
-  #images{
- ;
 
+  .act{
+    padding-top: 30px;
+    
   }
  
   .cards .cards-content {
-    padding: 20px; /* Espacement interne du contenu de la carte */
+    padding: 20px; 
   }
   
-  /* Style pour le titre à l'intérieur de la carte */
+  
   .cards .cards-title {
-    font-size: 1.2em; /* Taille de police du titre */
-    margin-bottom: 10px; /* Marge inférieure pour séparer le titre du contenu */
-    color: #333; /* Couleur du texte du titre */
+    font-size: 1.2em; 
+    margin-bottom: 10px; 
+    color: black;
   }
   
  
@@ -532,6 +544,48 @@ a:hover {
 }
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
-    /* ... */
-}
+@media (max-width: 767.98px) { 
+    
+    
+    
+    /* header... */
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        display: flex;
+        flex-basis: 50%;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin-right: 40px;
+        justify-content: center;
+    }
+    nav ul li:last-child {
+        margin-right: 50px;
+     
+        }
+        li:hover{ 
+            border-bottom: solid 3px var(--main-color)
+        }
+           /* 
+    *    barre de recherche
+    */   
+    .fa-solid.fa-magnifying-glass {
+        display: inline;
+        color: var(--main-bg-color);
+        background-color: var(--main-color);
+        margin-left: -5px;
+        font-size: 15px;
+        padding: 10px;
+    }
+    .btn-search span {
+        display: none;
+    }
+    
+    }
