@@ -597,24 +597,43 @@ a:hover {
         display: none;
     }
     
-    } 
-    /* Media query pour les écrans de moins de 768px */
-@media (max-width: 767.98px) {
+ 
     .filters {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
-        align-items: center;
-        text-align: center;
+        
+    
+        
     }
 
     .filters h3 {
-        grid-column: 1 / -1; /* occupe toute la largeur */
-        text-align: center;
+        grid-column: 1 / -1; 
+    
     }
 
     .btn-filter {
-        width: 100%; /* Prend la largeur de chaque colonne */
+        width: 100%; 
+    }
+    /* populaires*/
+    
+    .hebergements-and-populaires{
+        flex-direction: column-reverse;
+
+    
+    
+    }
+    
+    .populaires-cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .populaires-cards a {
+        width: 100%;
+        margin-bottom: 20px;
     }
 }
+
+
 
