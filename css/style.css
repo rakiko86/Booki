@@ -569,10 +569,16 @@ a:hover {
     nav ul li:last-child {
         margin-right: 50px;
      
+
         }
-        li:hover{ 
-            border-bottom: solid 3px var(--main-color)
+        nav{
+            border-bottom: solid var(--dark-grey);
+
         }
+        nav
+        .heb:hover{ border-top: none;
+            
+        
            /* 
     *    barre de recherche
     */   
