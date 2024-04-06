@@ -633,7 +633,33 @@ a:hover {
         width: 100%;
         margin-bottom: 20px;
     }
-}
+    /*hébergements*/
+    .hébergement{
+        background-color: var(--main-bg-color);
+    }
+    .hebergement-cards a{
+        display:flex;
+        flex-direction: column;
+    }
+/*activités*/
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cards {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+/*footer*/
+    footer {
+        flex-direction: column; 
+        align-items: center; 
+    }
 
+    .footer-left, .footer-middle, .footer-right {
+        width: 90%; 
+    }
+}
 
 
