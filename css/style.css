@@ -575,8 +575,11 @@ a:hover {
             border-bottom: solid var(--dark-grey);
 
         }
-        nav
-        .heb:hover{ border-top: none;
+        li:hover { border-bottom: solid 3px var(--main-color);
+
+        }
+
+        .heb:hover{ border-top: none;}
             
         
            /* 
@@ -594,4 +597,24 @@ a:hover {
         display: none;
     }
     
+    } 
+    /* Media query pour les écrans de moins de 768px */
+@media (max-width: 767.98px) {
+    .filters {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        align-items: center;
+        text-align: center;
     }
+
+    .filters h3 {
+        grid-column: 1 / -1; /* occupe toute la largeur */
+        text-align: center;
+    }
+
+    .btn-filter {
+        width: 100%; /* Prend la largeur de chaque colonne */
+    }
+}
+
