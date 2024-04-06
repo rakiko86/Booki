@@ -272,12 +272,12 @@ form button:hover {
     width: 65%;
     flex-wrap: wrap;
     align-items: flex-start;
-    gap: 0;
+    gap: 10;
     padding:0 10px;
 }
-h2{ padding-top: -5px;
-    padding-bottom: 20px;
-    padding-left: 10px;
+h2{ padding-top: 0;
+    padding-bottom: 15px;
+    padding-left: 5px;
 }
 .hebergements h3{
     width: 100%;
@@ -290,12 +290,12 @@ h2{ padding-top: -5px;
     display: flex;
 
 
-    gap: 10px;
+    gap: 5px;
     
 }
 .hebergements-cards div {
-    flex-basis: calc(25% - 2rem);
-    min-height: 120px;
+    flex-basis: calc(20% - 1rem);
+    min-height: auto;
 }
 .cont{
     background-color: var(--white);
@@ -304,15 +304,15 @@ h2{ padding-top: -5px;
     box-shadow: 0 0 8px var(--dark-grey);
     display: inline-block;
     
-    margin: 20px;
+    margin: 5px;
 
 }
-.img { height: 10rem;
+
     
 
-}
 .cont img{
     border-radius: 16px 16px 0 0;
+    height: 120px;
     
     width: 100%;
     object-fit: cover;
@@ -334,18 +334,19 @@ h2{ padding-top: -5px;
 }
 
 .cont img {
-    max-width: 100%; 
+    max-width: 100%;
+    object-fit: cover; 
 }
 
 
 /***/
-.hebergements-and-populaires .hebergement-cards {
+.hebergement-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
     gap: 2px; 
 }
 
-.hebergements-and-populaires .cont {
+.cont {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -355,12 +356,11 @@ h2{ padding-top: -5px;
     box-sizing: border-box; 
 }
 
-.hebergements-and-populaires .cont img {
-    max-width: 100%; 
-}
 
-.hebergements-and-populaires .box {
-    margin-top: auto; 
+
+.box {
+    margin-top: -5px;
+    padding: -5px; 
 }
 
 /****** Populaires ***********/
@@ -575,8 +575,8 @@ a:hover {
             border-bottom: solid var(--dark-grey);
 
         }
-        li:hover { border-bottom: solid 3px var(--main-color);
-
+        .heb:hover { border-bottom: solid 3px var(--main-color);
+padding-bottom: 15px;
         }
 
         .heb:hover{ border-top: none;}
@@ -635,12 +635,12 @@ a:hover {
     }
     /*hébergements*/
     .hébergement{
-        background-color: var(--main-bg-color);
+        background-color: white;
     }
-    .hebergement-cards a{
-        display:flex;
-        flex-direction: column;
+    .fa-solid.fa-star{
+        
     }
+    
 /*activités*/
     .card-container {
         flex-direction: column;
@@ -648,7 +648,7 @@ a:hover {
     }
     
     .cards {
-        width: 90%;
+        width: 100%;
         margin-bottom: 20px;
     }
 /*footer*/
@@ -661,5 +661,7 @@ a:hover {
         width: 90%; 
     }
 }
+
+
 
 
