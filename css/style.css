@@ -336,6 +336,8 @@ h2{ padding-top: 0;
 .cont img {
     max-width: 100%;
     object-fit: cover; 
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -350,18 +352,32 @@ h2{ padding-top: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border: 1px solid var(--light-grey); 
+    border: 1px solid var(--dark-grey); 
     border-radius: 15px; 
     padding: 5px; 
     box-sizing: border-box; 
+  
+}
+ .title{
+    padding:5px;
+    margin: 0;
+}
+.subtitle{
+    margin-top: 0;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+.box{
+    margin: 0;
+}
+.fa-solid.fa-star {
+    padding-left: 5px;
 }
 
 
 
-.box {
-    margin-top: -5px;
-    padding: -5px; 
-}
+
+
 
 /****** Populaires ***********/
 .populaires {
