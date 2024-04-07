@@ -503,7 +503,7 @@ footer {
 }
 
 .footer-left h4, .footer-middle h4, .footer-right h4 {
-    margin-bottom: 10px;
+    margin-left: 10px;
 }
 
 .footer-middle div {
@@ -518,7 +518,9 @@ a {
 a:hover {
     text-decoration: underline;
 }
-
+p {
+    padding: 10px;
+}
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
@@ -556,6 +558,7 @@ a:hover {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+    /*activités*/
     .cards img {
        
         height: calc(400px - 200px); 
