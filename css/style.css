@@ -177,10 +177,7 @@ form button:hover {
     margin-top: auto;
  }
 
- .filters h3  {margin: 0;
-    
 
-}
 
 .btn-filter p {
     margin: 0;
@@ -216,11 +213,7 @@ form button:hover {
     margin-right: 10px;
     color: var(--main-color);
 }
-.filtres{
-    display: flex;
-    align-items: center;
-    padding: 0px;
-}
+
 
 
 
@@ -563,7 +556,7 @@ p {
     .filtres {
         width: 100%;
     }
-        
+   
     
     /*activités*/
     .cards img {
@@ -604,22 +597,19 @@ p {
             
             border-bottom: solid var(--dark-grey);
             padding: 20px;
-        
+           
         display: flex;
 
         }
-    ul{
-        flex: 1;
-        width: 50%;
-    }
-     
+    
+         ul{
+            width: 100%;
+         }   
             
-            
-        }
+        
         .heb:hover { 
             border-bottom: solid 3px var(--main-color);
-            padding-bottom: 35px;
-            width: 100%; ;
+            padding-bottom: 30px;
         }
 
         .heb:hover{ border-top: none;}
@@ -707,6 +697,7 @@ p {
         width: 90%; 
     }
 }
+
 
 
 
