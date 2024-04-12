@@ -596,26 +596,30 @@ p {
         flex-direction: column;
         align-items: center;
     }
-    nav ul {
-        display: flex;
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-      }
-      nav ul li{
-        flex:1;
-      }
-  
-      nav ul li:not(:last-child) {
-        margin-right: 20px;
-      }
+
+   
      
         nav{
+            width: 100%;
+            
             border-bottom: solid var(--dark-grey);
+            padding: 20px;
+        
+        display: flex;
 
         }
-        .heb:hover { border-bottom: solid 3px var(--main-color);
-padding-bottom: 15px;
+    ul{
+        flex: 1;
+        width: 50%;
+    }
+     
+            
+            
+        }
+        .heb:hover { 
+            border-bottom: solid 3px var(--main-color);
+            padding-bottom: 35px;
+            width: 100%; ;
         }
 
         .heb:hover{ border-top: none;}
