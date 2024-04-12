@@ -597,19 +597,23 @@ p {
             
             border-bottom: solid var(--dark-grey);
             padding: 20px;
-           
-        display: flex;
+           display: flex;
+        
 
         }
     
          ul{
-            width: 100%;
-         }   
             
+            flex:1;
+            align-items: center;
+            justify-content: space-around;
+         }   
+        
         
         .heb:hover { 
             border-bottom: solid 3px var(--main-color);
-            padding-bottom: 30px;
+            padding-bottom: 35px;
+            
         }
 
         .heb:hover{ border-top: none;}
@@ -672,8 +676,10 @@ p {
     display: grid;
     grid-template-columns: repeat(1,1fr);
     
+
+    background-color: white;
    }
-   .hebergements .section {
+   .hebergements-and-populaires> .hebergements {
     background-color: white;
    }
     
