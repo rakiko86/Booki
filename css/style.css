@@ -99,7 +99,7 @@ header ul li:hover a {
 
 
 .heb:hover{
-    border-top: 2px solid var(--main-color);
+    border-top: 3px solid var(--main-color);
     color: var(--main-color);
     padding-top: 20px;
    
@@ -169,26 +169,30 @@ form button:hover {
 ^----------------------
 */
 .filters {
-    display: inline-flex;
-    
+    display: flex;
     flex-wrap:  wrap;
     align-items: justify;
-    gap: 15px;
-    margin-top: auto;
+    gap: 20px;  
+    
  }
-
-
-
-.btn-filter p {
-    margin: 0;
-    padding-right: 15px;
-    cursor: pointer;
+.filters h3{
+    padding: 0%;
 }
+.btn-filter p{
+    
+    padding: 0;
+    cursor: pointer;
 
+    
+
+}
 .btn-filter {
-    font-weight: bold;
+    font-weight:bold;
     border: 1px solid var(--dark-grey);
     border-radius: 30px;
+    padding-right: 1rem;
+    
+    
     
 }
 
@@ -197,25 +201,38 @@ form button:hover {
     box-shadow: 0 0 8px var(--dark-grey);
 }
   
-.btn-filter .fa-solid {
-
-    border-radius: 30px;
-}
-
-.btn-filter .fa-person {
-    padding: 5px 10px 5px 10px;
-
-    color: var(--main-color);
-}
-
-.btn-filter .fa-heart, .fa-fire, .fa-money-bill-wave {
-    padding: 5px;
-    margin-right: 10px;
-    color: var(--main-color);
+.fa-money-bill-wave{
+   padding-left: 1rem;
+   padding-right: 1rem;
+   
+   font-size: 22px;
+    
+    
 }
 
 
+ .fa-person{
+    padding-right: 1rem;
+    padding-left:1rem;
+   
+font-size: 22px;
+    
+  
+}
 
+.fa-heart{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+
+    font-size: 22px;
+
+}
+.fa-fire{
+    padding-left:1rem ;
+    padding-right: 1rem;
+    font-size: 22px;
+}
 
 /*
 *        barre d'information
@@ -236,7 +253,7 @@ form button:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 5px;
+    
 }
   
 .fa-location-dot {
@@ -278,8 +295,6 @@ h2{ padding-top: 0;
 }
 .hebergements-cards{
     display: flex;
-
-
     gap: 5px;
     
 }
@@ -287,49 +302,22 @@ h2{ padding-top: 0;
     flex-basis: calc(20% - 1rem);
     min-height: auto;
 }
-.cont{
-    background-color: var(--white);
-    border-radius: 16px;
 
-    box-shadow: 0 0 8px var(--dark-grey);
-    display: inline-block;
-    
-    margin: 5px;
-
-}
 
     
 
 .cont img{
     border-radius: 16px 16px 0 0;
     height: 120px;
-    
     width: 100%;
     object-fit: cover;
-    
-}
-
-.hebergement-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit); 
-    gap: 2px; 
-
-}
-
-.cont {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    border: 1px solid var(--main-bg-color); 
-    padding: 2px;
-}
-
-.cont img {
-    max-width: 100%;
-    object-fit: cover; 
     margin: 0;
-    padding: 0;
+    padding: 0;  
 }
+
+
+
+
 
 
 /***/
@@ -345,19 +333,19 @@ h2{ padding-top: 0;
     flex-direction: column;
     justify-content: space-between;
     border: 1px solid var(--dark-grey); 
-    border-radius: 15px; 
+    border-radius: 16px; 
     padding: 5px; 
     box-sizing: border-box; 
-  
+    background-color: var(--white);
+    box-shadow: 0 0 8px var(--dark-grey);
+
 }
  .title{
-    padding:5px;
+    padding: 0;
     margin: 0;
 }
 .subtitle{
-    margin-top: 0;
-    margin-left: 5px;
-    margin-bottom: 5px;
+margin: 0;
 }
 .box{
     margin: 0;
@@ -512,7 +500,7 @@ a {
 a:hover {
     text-decoration: underline;
 }
-p {
+.P{
     padding: 10px;
 }
 
