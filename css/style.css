@@ -172,7 +172,7 @@ form button:hover {
     display: flex;
     flex-wrap:  wrap;
     align-items: justify;
-    gap: 20px;  
+    gap: 15px;  
     
  }
 .filters h3{
@@ -638,7 +638,7 @@ a:hover {
     }
 
     .btn-filter {
-        width: 100%; 
+        width: 90%; 
     }
     /* populaires*/
     
