@@ -346,15 +346,18 @@ h2{ padding-top: 0;
 
 }
  .title{
-    padding: 0;
+    padding-bottom: 10px;
     margin: 0;
 }
 .subtitle{
 margin: 0;
+padding-bottom: 10px;
+
 }
 .box{
     margin: 0;
     padding: 5px;
+    font-size: 14px;
 }
 
 
@@ -559,7 +562,7 @@ a:hover {
         display: flex;
       object-fit: cover;}
     .cards-title{
-        font: 1em sans-serif;
+        font: 1em;
         margin-top: 15px;
         margin-bottom: 15px;
         align-items: center;
@@ -611,11 +614,12 @@ a:hover {
         }
 
         .heb:hover{ border-top: none;}
-            
+          
         
            /* 
     *    barre de recherche
     */   
+   
     .fa-solid.fa-magnifying-glass {
         display: inline;
         color: var(--main-bg-color);
@@ -676,7 +680,9 @@ a:hover {
    .hebergements-and-populaires> .hebergements {
     background-color: white;
    }
-    
+    .box{
+        font-size: 20px;
+    }
 /*activités*/
     .card-container {
         flex-direction: column;
@@ -686,7 +692,9 @@ a:hover {
     .cards {
         width: 100%;
         margin-bottom: 20px;
+
     }
+    
 /*footer*/
     footer {
         flex-direction: column; 
