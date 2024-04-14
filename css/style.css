@@ -140,7 +140,7 @@ form input::placeholder {
 }
 
 form h1 {
-    font-size: 20px;
+    font-size: 25px;
 }
 
 form button {
@@ -587,7 +587,7 @@ a:hover {
         align-items: center;
     }
 
-   
+  
      
         nav{
             width: 100%;
