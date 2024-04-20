@@ -96,7 +96,10 @@ header ul {
 header ul li:hover a {
     color: var(--main-color);
 }
-
+.subnav {
+    display: flex;
+    flex-basis: 100%;
+}
 
 .heb:hover{
     border-top: 3px solid var(--main-color);
@@ -127,9 +130,9 @@ form i {
 
 form input {
     border: 1px solid var(--dark-grey);
-    font-size: 15px;
+    font-size: 16px;
     font-weight: bold;
-    padding: 14px 10px 14px 10px;
+    padding: 13px 10px 12px 10px;
     margin-left: -5px;
     color:var(--main-color);
 
@@ -287,10 +290,10 @@ font-size: 22px;
     gap: 10;
     padding:0 10px;
 }
+
 h2{ padding-top: 0;
-    padding-bottom: 25px;
-    padding-left: 5px;
-}
+    padding-bottom: 30px;
+    padding-left: 5px;}
 .hebergements h3{
     width: 100%;
 }
@@ -346,18 +349,24 @@ h2{ padding-top: 0;
 
 }
  .title{
+    
     padding-bottom: 10px;
     margin: 0;
 }
 .subtitle{
 margin: 0;
 padding-bottom: 10px;
+text-decoration: none;
+
+
 
 }
 .box{
     margin: 0;
     padding: 5px;
-    font-size: 14px;
+    font-size: 16px;
+  
+    
 }
 
 
@@ -457,17 +466,20 @@ padding-bottom: 10px;
 
   .act{
     padding-top: 30px;
-    
+ font-size: 23px;   
 
     
   }
  
 
-  
+  h5{
+    font-size: 20px;
+  }
   
   .cards .cards-title {
     font-size: 1.2em; 
-    padding:0 15px; 
+    padding:20px;
+     margin: 0;
     color: black;
   }
   
@@ -503,12 +515,10 @@ footer {
 
 a {
     color:black;
-    text-decoration: none;
+   
 }
 
-a:hover {
-    text-decoration: underline;
-}
+
 .P{
     padding: 10px;
 }
@@ -586,7 +596,7 @@ a:hover {
         flex-direction: column;
         align-items: center;
     }
-
+   
   
      
         nav{
@@ -594,25 +604,27 @@ a:hover {
             
             border-bottom: solid var(--dark-grey);
             padding: 20px;
-           display: flex;
         
 
         }
-    
-         ul{
-            
-            flex:1;
+        li {
+            width: 100%;
+            display: flex;
             align-items: center;
-            justify-content: space-around;
-         }   
-        
+            justify-content: center;
+            
+        }
+    
+     
         
         .heb:hover { 
             border-bottom: solid 3px var(--main-color);
+            
             padding-bottom: 35px;
             
+            
         }
-
+       
         .heb:hover{ border-top: none;}
           
         
@@ -650,11 +662,23 @@ a:hover {
     .btn-filter {
         width: 90%; 
     }
+    .phrase2{
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
     /* populaires*/
+    .main-container{
+        padding: 0;
+        margin:0;
+        
+    }
     
     .hebergements-and-populaires {
     
         flex-direction: column-reverse;
+    }
+    .hebergements-and-populaires section{
+        border-radius: 0;
     }
     .hebergement-cards {
         background-color: var(--white);
