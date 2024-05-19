@@ -632,7 +632,7 @@ body {
 
     }
     .subnav1{
-        margin-right: 50px;
+        margin-right: 40px;
     }
     /****** Search bar ***********/
 h1{
@@ -650,8 +650,8 @@ h1{
         margin-left: -5px;
         font-size: 18px;
         border-radius: 18px;
-        box-shadow: 0 6px 2px 0 rgba(0, 0, 0, 0.1);
-        padding: 16px;
+        box-shadow: 0 6px 2px 0 rgba(0, 0, 0, 0.3);
+        padding: 15px 16px 18px 18px;
     }
 
 
@@ -673,6 +673,7 @@ h1{
         padding: 16px 0 16px 0;
         margin-left: -5px;
         color: var(--main-color);
+        width: 70%;
         
     }
     form input::placeholder {
@@ -689,8 +690,8 @@ h1{
 
    }
     .taille {
-        padding:20px;
-        width: 100%;
+        width: calc(100%-40px);
+        margin-left: 15px;
     }
 
     .search {
