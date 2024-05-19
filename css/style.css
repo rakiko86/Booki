@@ -692,6 +692,8 @@ h1{
     .taille {
         width: calc(100%-40px);
         margin-left: 15px;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 
     .search {
